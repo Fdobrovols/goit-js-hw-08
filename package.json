@@ -1,24 +1,27 @@
 {
   "name": "goit-js-hw-08",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "",
   "homepage": "https://Fdobrovols.github.io/goit-js-hw-08",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Fdobrovols/goit-js-hw-08.git"
   },
   "keywords": [],
-  "author": "Fedor Dobrovolskiyb <chubays30@gmail.com>",
+  "author": "Fedir Dobrovolskiy <chubays30@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Fdobrovols/goit-js-hw-08/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "@vimeo/player": "^2.18.0",
+    "lodash.throttle": "^4.1.1",
+    "modern-normalize": "^1.1.0",
+    "simplelightbox": "^2.12.1"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
