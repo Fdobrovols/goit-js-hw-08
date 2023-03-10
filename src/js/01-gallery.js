@@ -14,16 +14,18 @@ galleryContainerRef.insertAdjacentHTML(
   creatingMarkup(galleryItems)
 );
 
-function creatingMarkup(gallery) {
+function creatingMarkup(gallery) 
+{
   return gallery
-    .map(({ preview, original, description }) => {
+    .map(({ preview, original, description }) => 
+    {
       return `<a href="${original}" class="gallery__link">
-  <img class="gallery__image" src="${preview}" alt="${description}"/></a>`;
-    })
-    .join('');
+      <img class="gallery__image" src="${preview}" alt="${description}"/></a>`;
+    }).join('');
 }
 
-let gallery = new SimpleLightbox('.gallery a', {
+let gallery = new SimpleLightbox('.gallery a', 
+{
   captionsData: 'alt',
   captionDelay: 250,
   scrollZoomFactor: 0.1,
