@@ -13,8 +13,7 @@ const onPlayPlayer = function (e) {
   const timeWasPlayed = e.seconds;
   localStorage.setItem(STORAGE_TIME_KEY, timeWasPlayed);
 
-  // Реалізація від себе. Якщо дійшло до кінця, то у разі перезавантаження відтворення відео почнеться спочатку.
-  // e.seconds === e.duration && localStorage.setItem(STORAGE_TIME_KEY, '0');
+  
 };
 
 player.on('timeupdate', throttle(onPlayPlayer, 1000));
